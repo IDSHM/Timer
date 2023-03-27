@@ -1,0 +1,148 @@
+html,body {
+    height: 100%;
+}
+body {
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+}
+.box{
+    border: 10px solid;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+}
+
+.second{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    font-size: 48px;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.time{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+input[type="number"] {
+    width:30%;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background: rgba(10, 175, 230, 1);
+    border: none;
+    border-radius: 25px;
+    color: snow;
+    cursor: pointer;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    outline: none;
+    padding: 0.75em 2em;
+    position: relative;
+    text-transform: uppercase;
+    
+}
+button:hover {
+    -webkit-animation: glow 1s ease-in infinite;
+            animation: glow 1s ease-in infinite;
+}
+
+button::before {
+    -webkit-animation: glow 1s ease-in infinite;
+            animation: glow 1s ease-in infinite;
+    border-radius: inherit;
+    content: "";
+    filter: blur(10px);
+    opacity: 0.75;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+button:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+}
+
+#start {
+    background-color:rgba(10, 175, 230, 1);
+    color: white;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+
+#stop {
+    background-color: rgba(10, 175, 230, 1);
+    color: white;
+    margin-right: 10px;
+}
+
+#reset {
+    background-color: rgba(10, 175, 230, 1);
+    color: white;
+    margin-top: 15px;
+    margin-right: 10px;
+    
+}
+@-webkit-keyframes glow {
+    0% {
+    background: rgba(10, 175, 230, 1);
+}
+    25% {
+    background: rgba(10, 175, 230, 1);
+    }
+    100% {
+    background: rgba(10, 175, 230, 1);
+    }
+}
+
+@keyframes glow {
+    0% {
+    background: rgba(10, 175, 230, 1);
+    }
+    25% {
+    background: rgba(10, 175, 230, 1);
+    }
+    100% {
+    background: rgba(10, 175, 230, 1);
+    }
+}
+
+.T{
+text-transfrom:uppercase;
+color:white;
+font-size:3em;
+text-align:center;
+animation: neonGlow 2s infinite alternate ease-in-outQuad;
+}
+
+
